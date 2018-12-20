@@ -1,0 +1,47 @@
+{
+  "name": "thebruinbucketlist",
+  "version": "1.0.0",
+  "description": "An interactive UCLA bucket list that saves your progress",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build src/index.html -d build/ --public-url ./",
+    "deploy": "yarn build && yarn deploy-surge",
+    "deploy-surge": "surge --project build --domain thebruinbucketlist.com",
+    "clean": "rimraf dist && rimraf build"
+  },
+  "dependencies": {
+    "eslint-plugin-flowtype": "^2.46.1",
+    "moment": "^2.21.0",
+    "polished": "^2.3.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-toggle": "^4.0.2",
+    "styled-components": "^3.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.14",
+    "@types/react-dom": "^16.0.11",
+    "@types/react-router-dom": "^4.3.1",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "json5": "^2.1.0",
+    "parcel-bundler": "^1.10.3",
+    "rimraf": "^2.6.2",
+    "surge": "^0.20.1",
+    "typescript": "^3.2.2"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "printWidth": 80,
+    "tabWidth": 2
+  }
+}

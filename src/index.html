@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      property="og:description"
+      content="An interactive UCLA bucket list that saves your progress"
+    />
+    <meta
+      property="og:image"
+      content="https://s3-us-west-2.amazonaws.com/bibeks-random-assets/thebruinbucketlist/preview.png"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+    <title>The Bruin Bucket List</title>
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script src="./js/index.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-89695975-6"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'UA-89695975-6')
+    </script>
+
+    <!-- Facebook share button embed code -->
+    <div id="fb-root"></div>
+    <script>
+      ;(function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0]
+        if (d.getElementById(id)) return
+        js = d.createElement(s)
+        js.id = id
+        js.src =
+          'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2&appId=2087852051274005&autoLogAppEvents=1'
+        fjs.parentNode.insertBefore(js, fjs)
+      })(document, 'script', 'facebook-jssdk')
+    </script>
+  </body>
+</html>
